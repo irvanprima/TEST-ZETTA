@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.selected{
+    border: 3px blue solid;
+    box-shadow: 0 0 10px gray;
+}
+
+.pricing-header{
+    /* background: linear-gradient(to); */
+    background-color: rgb(37, 14, 86);
+    padding: 50px 20px;
+
+    text-align: center;
+    color: aliceblue;
+}
+
+.pricing-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+li{
+    text-decoration: none;
+}
+
+.card{
+    background-color: rgb(177, 192, 205);
+    /* margin: 20px; */
+    margin-top: 30px;
+    /* padding: 10px; */
+    box-shadow: 0 0 10 rgb(24, 3, 3);
+    transition: transform 0.3 ease;
+
+    /* padding-top: 20px; */
+    width: 220px;
+    text-align: center;
+    position: relative;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card header{
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+.faq{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Zetta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pricing-header">
+            <h2>Simple Pricing!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.
+            Nisi tempora, esse odio placeat magni velit?
+            Eos adipisci, sit at atque esse ex?</p>
+        </div>
+        <div class="pricing-card">
+            <div class="card basic">
+                <div class="card header">BASIC
+                    <div class="price">$4 <span>/Month</span>
+                        <ul>
+                            <li>10 project</li>
+                            <li>10 pages</li>
+                            <li>10 Mb Disk Space</li>
+                        </ul>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card standard">
+                <div class="card header">STANDARD
+                    <div class="price">$8 <span>/Month</span>
+                        <ul>
+                            <li>10 project</li>
+                            <li>10 pages</li>
+                            <li>10 Mb Disk Space</li>
+                        </ul>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card advanced">
+                <div class="card header">ADVANCED
+                    <div class="price">$12 <span>/Month</span>
+                        <ul>
+                            <li>10 project</li>
+                            <li>10 pages</li>
+                            <li>10 Mb Disk Space</li>
+                        </ul>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="faq">
+            <div class="faq-container"> 
+                    <h3>Frequently Asked Question</h3>
+                <div class="faq-item">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, dolor.</p>
+                </div>
+                <div class="faq-item">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, explicabo?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll("button").forEach(btn =>
+            btn.onclick = () => alert ("Succcess Purchasing")
+        );
+
+        const cards = document.querySelectorAll(".card");
+        cards.forEach(card => card.onclick = () => {
+            cards.forEach(c => c.classList.remove ("selected"));
+            card.classList.add("selected");
+        });
+    </script>
+</body>
+</html>
