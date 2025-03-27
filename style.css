@@ -1,11 +1,16 @@
 body{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
+
+/* .container{
+    background-color: rgb(255, 255, 255);
+} */
 
 .selected{
     border: 3px blue solid;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
 .pricing-header{
@@ -15,6 +20,9 @@ body{
 
     text-align: center;
     color: aliceblue;
+    
+
+    margin-bottom: 20px;
 }
 
 .pricing-card{
@@ -23,19 +31,27 @@ body{
     gap: 20px;
 }
 
-li{
-    text-decoration: none;
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding-left: 20px;
+    color: black;
+}
+
+ul li{
+    margin: 5px 0;
 }
 
 .card{
-    background-color: rgb(177, 192, 205);
-    /* margin: 20px; */
-    margin-top: 30px;
-    /* padding: 10px; */
-    box-shadow: 0 0 10 rgb(24, 3, 3);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.5);
+    padding: 20px;
+    border-radius: 8px; 
     transition: transform 0.3 ease;
 
-    /* padding-top: 20px; */
+    
+
     width: 220px;
     text-align: center;
     position: relative;
@@ -45,18 +61,89 @@ li{
     transform: scale(1.05);
 }
 
-.card header{
+.card-header{
     padding: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    background-color: #464646;
+
+    text-align: left;
+    
 
 }
 
+/* .basic .card-header {
+    background: #3E4E5E;
+}
 
+.standard .card-header {
+    background: #2C3E50;
+}
 
-.faq{
-    padding-top: 20px;
+.advanced .card-header {
+    background: #1E2A38;
+} */
+
+.discount {
+    font-size: 12px;
+    background: gold;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: 40px;
+    
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 14px;
+    color: gray;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.faq {
+    margin-top: 50px;
+    /* background: white; */
+    padding: 30px;
+}
+
+.faq-container {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.faq-item {
+    width: 300px;
+    text-align: left;
+}
+
+.faq-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq h3{
     text-align: center;
+    font-size: 30px;
 }
